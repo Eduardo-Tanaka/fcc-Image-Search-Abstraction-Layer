@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	h1 Free Code Camp Image Search Abstraction Layer
+	p Example searches:
+
+	a(href='https://freecodecamp-imagesearch.herokuapp.com/search/cats') https://freecodecamp-imagesearch.herokuapp.com/search/cats
+	br
+	a(href='https://freecodecamp-imagesearch.herokuapp.com/search/cats?offset=2') https://freecodecamp-imagesearch.herokuapp.com/search/cats?offset=2
+
+	p Search output:
+	p [{"image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPwQPek6ETp48uslDqemOAmNFcOBUg6pki1kanD5MFkkIHlcv-UcVhGw", "snippet":"Copy cat", "page":"https://www.google.com/trends/2014/static/images/pharrell-image-and-text-1-320.jpg"}, ... ]
+
+	p Latest Search:
+	p [{"_id":"56ab4545222481dc2f7ba01d","term":"lolcats","when":"2016-01-29T10:56:05.994Z","__v":0},...]
